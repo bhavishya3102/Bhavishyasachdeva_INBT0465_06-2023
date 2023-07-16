@@ -22,9 +22,13 @@
         <!-- grant location container -->
         <div class="grant-location-container sub-container">
           <img src="./assets/location.png" alt="" />
-          <p>Grant Location Access</p>
-          <p>Allow Access to get weather information</p>
-          <button class="btn" data-grantaccess>Grant Access</button>
+          <div>
+            <p>Grant Location Access</p>
+            <p>Allow Access to get weather information</p>
+            <button class="btn" data-grantaccess>Grant Access</button>
+
+          </div>
+
         </div>
 
         <form  class="searchbar sub-container" data-searchform >
@@ -42,29 +46,37 @@
 
         <!-- user info container --- dynamic data-->
 
-        <div class="user-info-container sub-container">
-          <div class="name">
-            <p data-cityName></p>
-            <img data-countryicon />
+        <div class="user-info-container sub-container sub-cont1">
+          <div>
+            <p data-temp></p>
+            <img data-weathericon />
+            <div class="name">
+              <p data-cityName></p>
+              <img data-countryicon />
+            </div>
+            <p data-weatherdesc></p>
+          
+         
           </div>
-          <p data-weatherdesc></p>
-          <img data-weathericon />
-          <p data-temp></p>
+      
 
           <!-- 3 cards parameter -->
           <div class="parameter-container">
             <!-- card1 -->
-            <div class="parameter">
-              <img src="./assets/cloud.png" alt="" />
-              <p>Clouds</p>
-              <p data-cloudiness></p>
-            </div>
+          
 
-            <!-- card2-->
+            <!-- card1-->
             <div class="parameter">
               <img src="./assets/humidity.png" alt="" />
               <p>Humidity</p>
               <p data-humidity></p>
+            </div>
+
+<!-- card2-->
+            <div class="parameter">
+              <img src="./assets/cloud.png" alt="" />
+              <p>Clouds</p>
+              <p data-cloudiness></p>
             </div>
 
             <!-- card3 -->
