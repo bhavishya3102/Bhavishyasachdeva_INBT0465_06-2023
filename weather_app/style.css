@@ -17,6 +17,11 @@ body{
     height: 100vh;
     background-size: cover;
 }
+/* .wrapper {
+    border: 2px solid white ;
+    width: 40vw;
+    height: 50vh;
+} */
 
 .wrapper h2{
     text-align: center;
@@ -56,27 +61,30 @@ display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translateX(120px);
 
 }
 .grant-location-container{
     display: none;
    
-    flex-direction: column;
+    flex-direction: row;
+    gap: 150px;
+    margin-top: 80px;
 }
 .grant-location-container.active{
     display:flex;
 }
 
 .grant-location-container img{
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
   margin-block: 1rem;
 }
 
 
 .grant-location-container p:first-of-type{
     color: white;
-    font-size: 1.7rem;
+    font-size: 3rem;
     font-style: bold;
 
     font-family: 'Mitr', sans-serif;
@@ -85,7 +93,7 @@ display: flex;
 .grant-location-container p:last-of-type{
     color: white;
     margin-block: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 3rem;
 }
 
 .grant-location-container button.btn{
@@ -93,10 +101,10 @@ display: flex;
     border: none;
     background-color: #3F72AF;
     color: white;
-    padding-block: 0.7rem;
-    padding-inline: 1.5rem;
+    padding-block: 1.8rem;
+    padding-inline: 4rem;
     margin-block:1rem;
-    border-radius: 4px;
+    border-radius: 35px;
 
 }
 
@@ -113,6 +121,13 @@ display: flex;
     height: 14rem;
     width: 14rem;
 
+}
+
+.sub-cont1
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 .loading p{
     color:white;
@@ -140,7 +155,7 @@ display: flex;
 
 .user-info-container div.name p{
     color: white;
-    font-size: 2.7rem;
+    font-size: 3.5rem;
 }
 
 .user-info-container div.name img{
@@ -152,31 +167,32 @@ display: flex;
 
 .user-info-container p[data-weatherdesc]{
     color: white;
-    font-size: 1.7rem;
+    font-size: 4rem;
 }
 .user-info-container img[data-weathericon]{
-    height: 15vh;
-    width: 10vw;
+    height: 25vh;
+    width: 15vw;
+    transform: translateX(-70px);
 }
 
 .user-info-container p[data-temp]{
     color: white;
-    font-size: 2.2rem;
+    font-size: 6rem;
     font-weight: 800;
 }
 
 .parameter-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.6rem;
     
 }
 
 .parameter{
-    height: 25vh;
-    width: 15vw;
+    height: 20vh;
+    width: 14vw;
      background-color: rgba(219, 226, 239, 0.5);
-     border-radius: 14px;
+     border-radius: 55px;
      padding-block:1rem ;
      padding-inline:2rem ;
      margin-block:1rem;
